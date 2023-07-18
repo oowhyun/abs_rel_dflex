@@ -62,13 +62,7 @@ li:hover .globalbox{
 /*인라인태그: a, img, span, strong, em, button, input <a:죄우는 먹히는데 위아래가 안먹힘>display:block>>
   블럭태그: div, p, section, header*/
 
-.globala i:nth-child(2)/*아시아지도 원래 안보임*/
-,li:hover .globala i:nth-child(1)/*망사지구 사라짐*/
+li:hover .globala i:before/*가상선택자 활용*/
 {
-    display: none;
-}
-li:hover .globala i:nth-child(2),/*마우스 올라가면 아시아지도 나타남*/
-.globala i:nth-child(1)/*망사지구 보임*/
-{
-    display: block;
+    content:"\F884";
 }

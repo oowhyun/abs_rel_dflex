@@ -1,0 +1,63 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto; /*가운데정렬*/
+}
+
+.d-flex{
+    display: flex;
+}
+
+.rel{position: relative;}
+.abs{position: absolute;}
+.fix{position: fixed;}
+
+#hd{
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 0;
+}
+#hd>div{
+    justify-content: space-between;
+    align-items: center;
+}
+#hd a{
+    color: white;
+    text-decoration: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.globalbox{
+    left: -1rem;
+    width: 100px;
+    top: 100%;
+    /* 100%:엄마 키만큼 내려가기 */
+    background-color: rgb(20, 20, 20);
+    /* border: 1px solid transparent;투명한 테두리 */
+    /* padding: 0 1rem; */
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    box-sizing: border-box;
+    /* 테두리 잡아주기 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-indent: 1rem;
+    /* padding 없이 정렬하기 */
+}
+#hd .globalbox a{
+    color: rgb(255, 241, 241);
+}
+/* 띄어쓰기 해야함 */
+li:hover .globalbox{
+    height: 5rem;
+    border-color: #ccc;
+}
+.globala{
+    display: block;
+    padding-bottom: 10px;
+}
+/*인라인태그: a, img, span, strong, em, button, input <a:죄우는 먹히는데 위아래가 안먹힘>display:block>>
+  블럭태그: div, p, section, header*/
